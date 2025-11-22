@@ -1,0 +1,175 @@
+📘 IntroQuest AI — Local Machine Installation Guide (Detailed)
+
+Follow this step-by-step guide to run the app smoothly on your computer.
+
+🖥 1. Install Python (Required)
+✅ Python version required: Python 3.10 – 3.12
+
+(Do NOT use Python 3.13 because many AI libraries are not yet compatible.)
+
+✔ Steps:
+
+Download Python from the official website:
+https://www.python.org/downloads/
+
+During installation, check the box:
+☑ Add Python to PATH
+
+Verify installation:
+
+python --version
+
+
+You should see something like:
+
+Python 3.11.6
+
+📂 2. Download the Project
+Option A — From GitHub (recommended)
+
+Open terminal / PowerShell:
+
+git clone https://github.com/your-username/introquest-ai.git
+cd introquest-ai
+
+Option B — Zip download
+
+Go to your GitHub repo
+
+Click Code → Download ZIP
+
+Extract the folder
+
+Open terminal and navigate into it.
+
+🔧 3. Create a Virtual Environment (Highly Recommended)
+python -m venv venv
+
+
+Activate it:
+
+Windows:
+venv\Scripts\activate
+
+macOS/Linux:
+source venv/bin/activate
+
+📦 4. Install Required Libraries
+
+Inside your project folder, run:
+
+pip install -r requirements.txt
+
+
+This installs:
+
+Streamlit
+
+SentenceTransformers
+
+Torch
+
+Pandas
+
+Plotly
+
+OpenPyXL
+
+And all support modules
+
+If Torch fails on Windows:
+Try:
+
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+📑 5. Place the Rubric Excel File
+
+You already have this file:
+
+Case study for interns.xlsx
+
+
+Place it inside your project folder (same folder as your .py file).
+
+Your folder structure should look like:
+
+introquest-ai/
+│ introquest_app.py
+│ requirements.txt
+│ Case study for interns.xlsx
+│ README.md
+
+▶️ 6. Run the App
+
+Use this command:
+
+streamlit run introquest_app.py
+
+
+You will see:
+
+Local URL: http://localhost:8501
+
+
+Open this in your browser.
+The UI will launch automatically.
+
+📝 7. Using the App
+✔ Upload rubric (optional)
+
+If you skip this, the system uses:
+Case study for interns.xlsx
+
+✔ Paste transcript
+
+Or upload .txt.
+
+✔ Click Score Transcript
+
+You will receive:
+
+Overall score
+
+Radar chart
+
+Per-criterion breakdown
+
+Keyword matches
+
+NLP similarity
+
+Achievement badges
+
+Export to CSV
+
+Improvement suggestions
+
+❗ 8. Common Fixes
+🔥 Error: "Torch not installed"
+
+Install:
+
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+⚠ Error: “sentence-transformers not found”
+
+Run:
+
+pip install sentence-transformers
+
+⚠ Streamlit not recognized
+
+Try:
+
+pip install streamlit
+
+🎉 9. App Successfully Running
+
+You should now see the full premium UI:
+
+✨ Glassmorphism design
+🎨 Center-aligned intro
+🌈 Bright gradient background
+📊 Charts + analytics
+
+Your local deployment is complete!
