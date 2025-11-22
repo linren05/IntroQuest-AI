@@ -79,7 +79,7 @@ Plotly
 Pandas / OpenPyXL
 
 📦 Installation
-git clone https://github.com/your-username/introquest-ai.git
+git clone https://github.com/linren05/introquest-ai.git
 cd introquest-ai
 pip install -r requirements.txt
 streamlit run introquest_app.py
