@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 plotly
-scikit-learn
+scikit-learn==1.5.0
 openpyxl
 transformers==4.39.3
 sentence-transformers==2.5.1
