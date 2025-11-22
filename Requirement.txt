@@ -2,7 +2,8 @@ streamlit
 pandas
 numpy
 plotly
-sentence-transformers
-torch
 scikit-learn
 openpyxl
+transformers==4.39.3
+sentence-transformers==2.5.1
+torch==2.2.0+cpu -f https://download.pytorch.org/whl/cpu
